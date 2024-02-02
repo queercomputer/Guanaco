@@ -3,7 +3,10 @@
 <img src="assets/logo1.png" alt="Guanaco" style="width: 90%; min-width: 300px; display: block; margin: auto;">
 </p>
 
-# Guanaco: Seeding, Tuning, Generating, and the problem of critical intervention in Large Language Models
+# The third animal that follows the pair llama and alpaca is guanaco: 
+## Seeding, Tuning, Generating, and the problem of critical intervention in Large Language Models
+
+The third animal that follows the pair llama and alpaca is guanaco.
 
 This is the code repository for the 'Guanaco' lesson plan contained in *Peripheral: teaching digital cultures in chaotic times*, published by *The Institute of Network Cultures*. Follow along with the lesson via the journal: *link TBC*.
 
@@ -23,10 +26,15 @@ The second part of the lesson will be to generate a new AI model within the came
 
 Students will be asked to reflect upon the relation between seed, generation, and hallucination. To what degree is political intervention possible in large language models? To what degree can experiments in tuning make present and detourn models’ foundations, and what consequences do such experiments have in a chaotic age of increasingly accessible and normalised access to generative AI?
 
-## Data Release
+## Lesson Plan
 
-[`alpaca_data.json`](./alpaca_data.json) contains 52K instruction-following data we used for fine-tuning the Alpaca model.
-This JSON file is a list of dictionaries, each dictionary contains the following fields:
+### Step one:
+
+Compare the [175 seed tasks](./alpaca_seed_tasks.jsonl) with the [52,000 GPT3-generated instruction parameters](./alpaca_generated_data.json).
+
+#### Key texts:
+- Stanford Alpaca's release [blog post](https://crfm.stanford.edu/2023/03/13/alpaca.html).
+- The [Self-Instruct paper](https://arxiv.org/abs/2212.10560) by Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A. Smith, Daniel Khashabi, Hannaneh Hajishirzi. 
 
 - `instruction`: `str`, describes the task the model should perform. Each of the 52K instructions is unique.
 - `input`: `str`, optional context or input for the task. For example, when the instruction is "Summarize the following article", the input is the article. Around 40% of the examples have an input.
