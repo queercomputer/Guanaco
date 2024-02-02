@@ -44,20 +44,21 @@ As a class, manually write your own [175 original seed tasks](./guanaco_seed_tas
 #### Key reading:
 - [A Sign That Spells](https://arxiv.org/abs/2211.06323) by Fabian Offert and Thao Phan.
 
-
-
-
-
-## Data Generation Process
-
 <details>
-<summary> <strong> Running the code </strong> </summary>
+<summary> Generate a synthetic dataset from your original seed tasks.</summary>
 
 1. Set environment variables `OPENAI_API_KEY` to your OpenAI API key.
 2. Install the dependencies with `pip install -r requirements.txt`.
 3. Run `python -m generate_instruction generate_instruction_following_data` to generate the data.
 
 </details>
+
+
+
+
+## Data Generation Process
+
+
 
 We built on the data generation pipeline from [self-instruct](https://github.com/yizhongw/self-instruct) and made the following modifications:
 
@@ -214,6 +215,7 @@ alpaca_tokenizer = transformers.AutoTokenizer.from_pretrained("<path_to_store_re
 
 Please cite the repo if you use the data or code in this repo.
 
+```
 @misc{alpaca,
   author = {Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto },
   title = {Stanford Alpaca: An Instruction-following LLaMA model},
@@ -222,6 +224,7 @@ Please cite the repo if you use the data or code in this repo.
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/tatsu-lab/stanford_alpaca}},
 }
+```
 
 Naturally, you should also cite the original LLaMA paper [1] and the Self-Instruct paper [2].
 
