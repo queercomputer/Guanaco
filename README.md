@@ -6,11 +6,9 @@
 # The third animal that follows the pair llama and alpaca is guanaco: 
 ## Seeding, Tuning, Generating, and the problem of critical intervention in Large Language Models
 
-This is the code repository for the 'Guanaco' lesson plan contained in *Peripheral: teaching digital cultures in chaotic times*, published by *The Institute of Network Cultures*. 
+This is the code repository for the 'Guanaco' lesson plan contained in *Peripheral: teaching digital cultures in chaotic times*, published by *The Institute of Network Cultures*. Follow along with the lesson via the journal: *link TBC*.
 
-Follow along with the lesson via the journal: *link TBC*.
-
-Note: Guanaco is a hypothetical AI model and research project for educational purposes.
+Note: Guanaco is a hypothetical AI model for research and educational purposes.
 
 ## Overview
 
