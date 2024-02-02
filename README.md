@@ -1,6 +1,6 @@
 
 <p align="center" width="100%">
-<img src="assets/logo1.png" alt="Stanford-Alpaca" style="width: 50%; min-width: 300px; display: block; margin: auto;">
+<img src="assets/logo1.png" alt="Stanford-Alpaca" style="width: 90%; min-width: 300px; display: block; margin: auto;">
 </p>
 
 # Stanford Alpaca: An Instruction-following LLaMA Model
