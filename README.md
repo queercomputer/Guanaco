@@ -54,22 +54,32 @@ Ensure you have Python installed on your computer before starting.
 
 <details>
 <summary> 1. Downloading the Code Repository from GitHub</summary>
+
 - Navigate to the GitHub Page: Open your web browser and go to the GitHub page where the code repository is located.
+
 - Download the Repository: Look for a green button labeled "Code" near the top of the page. Click on it and then select "Download ZIP" from the dropdown menu.
+
 - Extract the ZIP File: Once the download is complete, locate the ZIP file on your computer (usually in your Downloads folder) and extract it. You can do this by right-clicking on the file and selecting - "Extract All" or "Extract Here."
 </details>
 
 <details>
 <summary> 2. Installing Python Modules</summary>
+
 - Open Command Line Interface:
+
     - On Windows, press Windows Key + R, type cmd, and press Enter.
+
     - On Mac, open the Terminal application from your Applications/Utilities folder.
+
 - Navigate to the Project Directory: Use the cd command followed by the path to the extracted folder to change your current directory to the location of the downloaded code. For example: cd Downloads/project-folder.
+
 - Install Required Modules: Type 
+
 ```
 pip install -r requirements.txt
 ```
 and press Enter. This command reads the requirements.txt file included in your project folder and installs all the necessary Python modules listed there.
+
 </details>
 
 <details>
@@ -85,11 +95,17 @@ and press Enter. This command reads the requirements.txt file included in your p
 
 <details>
 <summary> 4. Running the Python Script</summary>
+
 - Open Command Line Interface (if not already open):
+
 - On Windows, press Windows Key + R, type cmd, and press Enter.
+
 - On Mac, open the Terminal application from your Applications/Utilities folder.
+
 - Navigate to Your Project Folder (if not already there): Use the cd command to change your current directory to the location of the downloaded code, if you've navigated away from it.
+
 - Run the Script: Type python script_name.py, replacing script_name.py with the name of the Python script you need to run, and press Enter. The script will execute and perform the tasks as programmed.
+
 </details>
 
 ### old
