@@ -48,10 +48,47 @@ To generate a synthetic dataset from your original seed tasks please follow the 
 
 ### Data Generation Process
 
-Download code from the Guanaco github repository: https://github.com/queercomputer/Guanaco, and install the required Python modules onto your computer:
+This data generation pipeline was built by the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) team, on top of the framework designed by for [self-instruct](https://github.com/yizhongw/self-instruct).
+
+Ensure you have Python installed on your computer before starting.
+
+<details>
+<summary> 1. Downloading the Code Repository from GitHub</summary>
+- Navigate to the GitHub Page: Open your web browser and go to the GitHub page where the code repository is located.
+- Download the Repository: Look for a green button labeled "Code" near the top of the page. Click on it and then select "Download ZIP" from the dropdown menu.
+- Extract the ZIP File: Once the download is complete, locate the ZIP file on your computer (usually in your Downloads folder) and extract it. You can do this by right-clicking on the file and selecting - "Extract All" or "Extract Here."
+</details>
+
+<details>
+<summary> 2. Installing Python Modules</summary>
+- Open Command Line Interface:
+    - On Windows, press Windows Key + R, type cmd, and press Enter.
+    - On Mac, open the Terminal application from your Applications/Utilities folder.
+- Navigate to the Project Directory: Use the cd command followed by the path to the extracted folder to change your current directory to the location of the downloaded code. For example: cd Downloads/project-folder.
+- Install Required Modules: Type 
 ```
 pip install -r requirements.txt
 ```
+and press Enter. This command reads the requirements.txt file included in your project folder and installs all the necessary Python modules listed there.
+</details>
+
+<details>
+<summary> 3. Setting Up an OpenAI API Key</summary>
+- Create an OpenAI Account: Go to the OpenAI website and sign up for an account if you don’t already have one.
+- Generate an API Key: Once logged in, navigate to the API section and follow the instructions to generate a new API key. Keep this key confidential.
+- Configure Your Project: Open the project folder and locate the configuration file (it might be named something like config.py or settings.py). Open it with a text editor and replace the placeholder text with your OpenAI API key. This usually looks like OPENAI_API_KEY = "your_key_here".
+</details>
+
+<details>
+<summary> 4. Running the Python Script/summary>
+- Open Command Line Interface (if not already open):
+- On Windows, press Windows Key + R, type cmd, and press Enter.
+- On Mac, open the Terminal application from your Applications/Utilities folder.
+- Navigate to Your Project Folder (if not already there): Use the cd command to change your current directory to the location of the downloaded code, if you've navigated away from it.
+- Run the Script: Type python script_name.py, replacing script_name.py with the name of the Python script you need to run, and press Enter. The script will execute and perform the tasks as programmed.
+</details>
+
+### old
 
 you will need to set up an OpenAI API key: https://platform.openai.com/api-keys, download our code from the Guanaco github repository: https://github.com/queercomputer/Guanaco, and install the required Python modules onto your computer:
 pip install -r requirements.txt
