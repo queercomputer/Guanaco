@@ -53,17 +53,15 @@ This data generation pipeline was built by the [Stanford Alpaca](https://github.
 Ensure you have Python installed on your computer before starting.
 
 <details>
-<summary> 1. Downloading the Code Repository from GitHub</summary>
+<summary> 1. Downloading the code repository from GitHub</summary>
 
-- Navigate to the GitHub Page: Open your web browser and go to the GitHub page where the code repository is located.
+- Download the Repository: On our [GitHub page](https://github.com/queercomputer/Guanaco/), look for the green button labeled "Code" near the top of the page. Click on it and then select "Download ZIP" from the dropdown menu.
 
-- Download the Repository: Look for a green button labeled "Code" near the top of the page. Click on it and then select "Download ZIP" from the dropdown menu.
-
-- Extract the ZIP File: Once the download is complete, locate the ZIP file on your computer (usually in your Downloads folder) and extract it. You can do this by right-clicking on the file and selecting - "Extract All" or "Extract Here."
+- Extract the ZIP File: Once the download is complete, locate the ZIP file on your computer and extract it.
 </details>
 
 <details>
-<summary> 2. Installing Python Modules</summary>
+<summary> 2. Installing Python modules</summary>
 
 - Open Command Line Interface:
 
@@ -71,7 +69,11 @@ Ensure you have Python installed on your computer before starting.
 
     - On Mac, open the Terminal application from your Applications/Utilities folder.
 
-- Navigate to the Project Directory: Use the cd command followed by the path to the extracted folder to change your current directory to the location of the downloaded code. For example: cd Downloads/project-folder.
+- Navigate to the project directory: Use the cd command followed by the path to the extracted folder to change your current directory to the location of the downloaded code. For example: 
+
+```
+cd Downloads/Guanaco-main
+```
 
 - Install Required Modules. Type:
 
@@ -83,28 +85,38 @@ pip install -r requirements.txt
 </details>
 
 <details>
-<summary> 3. Setting Up an OpenAI API Key</summary>
+<summary> 3. Setting up an OpenAI API Key</summary>
 
-- Create an OpenAI Account: Go to the OpenAI website and sign up for an account if you don’t already have one.
+- Create an OpenAI account: Go to the [OpenAI website](https://platform.openai.com/api-keys) and sign up for an account if you don’t already have one.
 
-- Generate an API Key: Once logged in, navigate to the API section and follow the instructions to generate a new API key. Keep this key confidential.
+- Generate an API key: Once logged in, navigate to the [API section](https://platform.openai.com/api-keys) and follow the instructions to generate a new API key. Keep this key confidential.
 
-- Configure Your Project: Open the project folder and locate the configuration file (it might be named something like config.py or settings.py). Open it with a text editor and replace the placeholder text with your OpenAI API key. This usually looks like OPENAI_API_KEY = "your_key_here".
+- Configure your project: Open the project folder and locate the configuration file (utils.py). Open it with a text editor and replace the placeholder text with your OpenAI API key. 
+
+```
+OPENAI_API_KEY = "your_key_here"
+```
 
 </details>
 
 <details>
-<summary> 4. Running the Python Script</summary>
+<summary> 4. Running the Python script</summary>
 
-- Open Command Line Interface (if not already open):
+- Return to your Command Line Interface.
 
-- On Windows, press Windows Key + R, type cmd, and press Enter.
+- Navigate back to your project folder (if not already there): Use the cd command to change your current directory to the location of the downloaded code. For example: 
 
-- On Mac, open the Terminal application from your Applications/Utilities folder.
+```
+cd Downloads/Guanaco-main
+```
 
-- Navigate to Your Project Folder (if not already there): Use the cd command to change your current directory to the location of the downloaded code, if you've navigated away from it.
+- Run the script: Type: 
 
-- Run the Script: Type python script_name.py, replacing script_name.py with the name of the Python script you need to run, and press Enter. The script will execute and perform the tasks as programmed.
+```
+python generate_instruction.py
+```
+
+- Hit Enter. The script will execute and perform the tasks as programmed.
 
 </details>
 
