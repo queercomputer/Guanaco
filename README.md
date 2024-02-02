@@ -48,6 +48,11 @@ To generate a synthetic dataset from your original seed tasks please follow the 
 
 ### Data Generation Process
 
+Download code from the Guanaco github repository: https://github.com/queercomputer/Guanaco, and install the required Python modules onto your computer:
+```
+pip install -r requirements.txt
+```
+
 you will need to set up an OpenAI API key: https://platform.openai.com/api-keys, download our code from the Guanaco github repository: https://github.com/queercomputer/Guanaco, and install the required Python modules onto your computer:
 pip install -r requirements.txt
 Update the ‘seed_tasks.jsonl’ document to include your original 175 seed tasks, and update the ‘utils.py’ script with your secret OpenAI API key:
