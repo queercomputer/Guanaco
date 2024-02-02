@@ -73,12 +73,12 @@ Ensure you have Python installed on your computer before starting.
 
 - Navigate to the Project Directory: Use the cd command followed by the path to the extracted folder to change your current directory to the location of the downloaded code. For example: cd Downloads/project-folder.
 
-- Install Required Modules: Type 
+- Install Required Modules. Type:
 
 ```
 pip install -r requirements.txt
 ```
-and press Enter. This command reads the requirements.txt file included in your project folder and installs all the necessary Python modules listed there.
+- Hit Enter. This command reads the requirements.txt file included in your project folder and installs all the necessary Python modules listed there.
 
 </details>
 
