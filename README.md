@@ -74,13 +74,17 @@ and press Enter. This command reads the requirements.txt file included in your p
 
 <details>
 <summary> 3. Setting Up an OpenAI API Key</summary>
+
 - Create an OpenAI Account: Go to the OpenAI website and sign up for an account if you don’t already have one.
+
 - Generate an API Key: Once logged in, navigate to the API section and follow the instructions to generate a new API key. Keep this key confidential.
+
 - Configure Your Project: Open the project folder and locate the configuration file (it might be named something like config.py or settings.py). Open it with a text editor and replace the placeholder text with your OpenAI API key. This usually looks like OPENAI_API_KEY = "your_key_here".
+
 </details>
 
 <details>
-<summary> 4. Running the Python Script/summary>
+<summary> 4. Running the Python Script</summary>
 - Open Command Line Interface (if not already open):
 - On Windows, press Windows Key + R, type cmd, and press Enter.
 - On Mac, open the Terminal application from your Applications/Utilities folder.
