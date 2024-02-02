@@ -214,7 +214,6 @@ alpaca_tokenizer = transformers.AutoTokenizer.from_pretrained("<path_to_store_re
 
 Please cite the repo if you use the data or code in this repo.
 
-```
 @misc{alpaca,
   author = {Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto },
   title = {Stanford Alpaca: An Instruction-following LLaMA model},
@@ -223,7 +222,6 @@ Please cite the repo if you use the data or code in this repo.
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/tatsu-lab/stanford_alpaca}},
 }
-```
 
 Naturally, you should also cite the original LLaMA paper [1] and the Self-Instruct paper [2].
 
