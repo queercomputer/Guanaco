@@ -7,7 +7,7 @@
 
 The third animal that follows the pair llama and alpaca is guanaco.
 
-This is the code repository for the 'Guanaco' lesson plan contained in *Peripheral: teaching digital cultures in chaotic times*, published by *The Institute of Network Cultures*. Follow along with the lesson via the journal: *link TBC*.
+This is the code repository for the 'Guanaco' lesson plan contained in *______________________________*, published by *________________*. Follow along with the lesson via the journal: *link TBC*.
 
 Note: Guanaco is a hypothetical AI model for research and educational purposes.
 
@@ -55,9 +55,12 @@ Ensure you have Python installed on your computer before starting.
 <details>
 <summary> 1. Downloading the code repository from GitHub</summary>
 
-- Download the Repository: On our [GitHub page](https://github.com/queercomputer/Guanaco/), look for the green button labeled "Code" near the top of the page. Click on it and then select "Download ZIP" from the dropdown menu.
+- Download the repository: On our [GitHub page](https://github.com/queercomputer/Guanaco/), look for the green button labeled "Code" near the top of the page. Click on it and then select "Download ZIP" from the dropdown menu.
 
-- Extract the ZIP File: Once the download is complete, locate the ZIP file on your computer and extract it.
+- Extract the ZIP file: Once the download is complete, locate the ZIP file on your computer and extract it.
+
+- Ensure your classroom's version of the Guanaco seed-set is saved inside this folder as 'guanaco_seed_tasks.jsonl'.
+
 </details>
 
 <details>
@@ -75,7 +78,7 @@ Ensure you have Python installed on your computer before starting.
 cd Downloads/Guanaco-main
 ```
 
-- Install Required Modules. Type:
+- Install the required Python modules. Type:
 
 ```
 pip install -r requirements.txt
@@ -91,7 +94,7 @@ pip install -r requirements.txt
 
 - Generate an API key: Once logged in, navigate to the [API section](https://platform.openai.com/api-keys) and follow the instructions to generate a new API key. Keep this key confidential.
 
-- Configure your project: Open the project folder and locate the configuration file (utils.py). Open it with a text editor and replace the placeholder text with your OpenAI API key. 
+- Configure your project: Open the project folder and locate the configuration file — 'utils.py'. Open it with a text editor and replace the placeholder text with your OpenAI API key. 
 
 ```
 OPENAI_API_KEY = "your_key_here"
@@ -120,6 +123,17 @@ python generate_instruction.py
 
 </details>
 
+<details>
+<summary> 5. Your Guanaco dataset</summary>
+
+- The synthetic dataset will be outputted as ‘guanaco_generated_data.json’ within the same folder.
+
+- When testing this lesson, generating a thousand additional tasks took around 1 hour and 20 minutes and cost us 50 cents. 
+
+- We recommend reflecting on the Guanaco synthetic dataset online or within a future lesson. However, the ‘guanaco_generated_data.json’ file will start populating with tasks within minutes and can be viewed and reflected upon in class while it is being generated.
+
+</details>
+
 ### old
 
 you will need to set up an OpenAI API key: https://platform.openai.com/api-keys, download our code from the Guanaco github repository: https://github.com/queercomputer/Guanaco, and install the required Python modules onto your computer:
@@ -127,9 +141,9 @@ pip install -r requirements.txt
 Update the ‘seed_tasks.jsonl’ document to include your original 175 seed tasks, and update the ‘utils.py’ script with your secret OpenAI API key:
 openai.api_key = '*************************************************'
 
-You can now run the Python script: ‘generate_instruction.py’. The synthetic dataset will be outputted as ‘regen.json’ within the same folder.
+You can now run the Python script: ‘generate_instruction.py’. 
 
-When testing this lesson, generating a thousand additional tasks took around 1 hour and 20 minutes and cost us 50 cents. We recommend reflecting on the Guanaco synthetic dataset online or within a future lesson. However, the ‘regen.json’ file starts populating with tasks within minutes and can be viewed and reflected upon in class while it is being generated.
+
 
 
 We built on the data generation pipeline from [self-instruct](https://github.com/yizhongw/self-instruct) and made the following modifications:
