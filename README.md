@@ -19,15 +19,13 @@ Days later however, the live model was taken down due to ‘safety issues’ —
 
 The question is — why then did Alpaca fail, and what is it to ‘fine-tune’ an AI model? Thao Phan and Fabian Offert have criticised some recent efforts to ‘debias’ generative AI models as superficial, as failing especially to confront “the consistent reproduction of whiteness as a latent feature of dominant…culture” ([2022](https://arxiv.org/abs/2211.06323)). To what extent can a model be ‘tuned’ beyond or outside or against its foundational parameters and weightings? 
 
-The lesson proposed [here](https://networkcultures.org) takes two steps. In the first the classroom will be invited to compare Alpaca’s 175 human instructions with the 52,000 GPT3-generated instruction parameters — how do categories of race, gender, sexuality and the political appear differently in the human generated and machine generated prompts? What does this difference reveal about the way the LLM transforms human intentionality, desires, and political engagements?
-
-The second part of the lesson will be to generate a new AI model within the camelid family, Guanaco. After reflecting on a series of critical AI texts, the classroom will collectively devise their own AI model by manually writing 175 original seed tasks, with ideas of race, gender, sexuality and the political front of mind. GPT3.5 is then prompted to generate an additional thousand tasks based on the seed-set created within the classroom.
+The lesson proposed [here]() takes two steps. In the first the classroom will be invited to compare Alpaca’s 175 human instructions with the 52,000 GPT3-generated instruction parameters, and in the second the classroom will generate a new AI model within the camelid family, Guanaco.
 
 Students will be asked to reflect upon the relation between seed, generation, and hallucination. To what degree is political intervention possible in large language models? To what degree can experiments in tuning make present and detourn models’ foundations, and what consequences do such experiments have in a chaotic age of increasingly accessible and normalised access to generative AI?
 
 ## Lesson Plan
 
-Note: The full lesson plan is featured in *Peripheral*: *link TBC*
+Note: The full lesson plan is featured in *_________________*: *link TBC*
 
 ### Step one:
 
@@ -46,9 +44,9 @@ As a class, manually write your own [175 original seed tasks](./guanaco_seed_tas
 
 To generate a synthetic dataset from your original seed tasks please follow the steps outlined below.
 
-### Data Generation Process
+#### Data Generation Process
 
-This data generation pipeline was built by the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) team, on top of the framework designed by for [self-instruct](https://github.com/yizhongw/self-instruct).
+This data generation pipeline was built by the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) team, on top of the framework designed for [self-instruct](https://github.com/yizhongw/self-instruct).
 
 Ensure you have Python installed on your computer before starting.
 
@@ -142,20 +140,8 @@ python generate_instruction.py
 
 ### Acknowledgements
 
-Please cite the repo if you use the data or code in this repo.
+We'd like to acknowledge the work of:
 
-```
-@misc{alpaca,
-  author = {Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto },
-  title = {Stanford Alpaca: An Instruction-following LLaMA model},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/tatsu-lab/stanford_alpaca}},
-}
-```
+- the Stanford Alpaca team for their work on the Alpaca model and [code repository](https://github.com/tatsu-lab/stanford_alpaca): Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang and Tatsunori B. Hashimoto.
 
-Naturally, you should also cite the original LLaMA paper [1] and the Self-Instruct paper [2].
-
-We thank Yizhong Wang for his help in explaining the data generation pipeline in Self-Instruct and providing the code for the parse analysis plot.
-We thank Yifan Mai for helpful support, and members of the Stanford NLP Group as well as the Center for Research on Foundation Models (CRFM) for their helpful feedback.
+- the University of Washington Natural Language Processing lab and everyone who worked on the [Self-Instruct paper](https://arxiv.org/abs/2212.10560) and the self-intruct [repository](https://github.com/yizhongw/self-instruct): Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A. Smith, Daniel Khashabi and Hannaneh Hajishirzi.
