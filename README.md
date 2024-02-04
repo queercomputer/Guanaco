@@ -128,41 +128,11 @@ python generate_instruction.py
 
 - The synthetic dataset will be outputted as ‘guanaco_generated_data.json’ within the same folder.
 
-- When testing this lesson, generating a thousand additional tasks took around 1 hour and 20 minutes and cost us 50 cents. 
+- In our testing, generating a thousand additional tasks took approximately 1 hour and 20 minutes, incurring a cost of 50 cents. These figures can vary based on several factors, but it is relatively cheap.
 
-- We recommend reflecting on the Guanaco synthetic dataset online or within a future lesson. However, the ‘guanaco_generated_data.json’ file will start populating with tasks within minutes and can be viewed and reflected upon in class while it is being generated.
+- While the full dataset generation may take some time, the 'guanaco_generated_data.json' file will begin to populate with tasks almost immediately. This provides an opportunity for real-time observation and discussion in class. We recommend reflecting on the finished Guanaco synthetic dataset online or part of a subsequent lesson.
 
 </details>
-
-### old
-
-you will need to set up an OpenAI API key: https://platform.openai.com/api-keys, download our code from the Guanaco github repository: https://github.com/queercomputer/Guanaco, and install the required Python modules onto your computer:
-pip install -r requirements.txt
-Update the ‘seed_tasks.jsonl’ document to include your original 175 seed tasks, and update the ‘utils.py’ script with your secret OpenAI API key:
-openai.api_key = '*************************************************'
-
-You can now run the Python script: ‘generate_instruction.py’. 
-
-
-
-
-We built on the data generation pipeline from [self-instruct](https://github.com/yizhongw/self-instruct) and made the following modifications:
-
-- We used `text-davinci-003` to generate the instruction data instead of `davinci`.
-- We wrote a new prompt (`prompt.txt`) that explicitly gave the requirement of instruction generation to `text-davinci-003`. Note: there is a slight error in the prompt we used, and future users should incorporate the edit in <https://github.com/tatsu-lab/stanford_alpaca/pull/24>
-- We adopted much more aggressive batch decoding, i.e., generating 20 instructions at once, which significantly reduced the cost of data generation.
-- We simplified the data generation pipeline by discarding the difference between classification and non-classification instructions.
-- We only generated a single instance for each instruction, instead of 2 to 3 instances as in [1].
-
-This produced an instruction-following dataset with 52K examples obtained at a much lower cost (less than $500).
-In a preliminary study, we also find our 52K generated data to be much more diverse than the data released by [self-instruct](https://github.com/yizhongw/self-instruct/blob/main/data/seed_tasks.jsonl).
-We plot the below figure (in the style of Figure 2 in the [self-instruct paper](https://arxiv.org/abs/2212.10560) to demonstrate the diversity of our data.
-The inner circle of the plot represents the root verb of the instructions, and the outer circle represents the direct objects.
-
-[//]: # (![parse_analysis]&#40;assert/parse_analysis.png | width=100&#41;)
-[<img src="assets/parse_analysis.png" width="750" />](./assets/parse_analysis.png)
-
-
 
 ### Authors
 
@@ -170,7 +140,7 @@ The inner circle of the plot represents the root verb of the instructions, and t
 - [Dr Christopher O’Neill](https://www.admscentre.org.au/christopher-oneill/)
 
 
-### Citations
+### Acknowledgements
 
 Please cite the repo if you use the data or code in this repo.
 
@@ -186,8 +156,6 @@ Please cite the repo if you use the data or code in this repo.
 ```
 
 Naturally, you should also cite the original LLaMA paper [1] and the Self-Instruct paper [2].
-
-### Acknowledgements
 
 We thank Yizhong Wang for his help in explaining the data generation pipeline in Self-Instruct and providing the code for the parse analysis plot.
 We thank Yifan Mai for helpful support, and members of the Stanford NLP Group as well as the Center for Research on Foundation Models (CRFM) for their helpful feedback.
