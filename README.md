@@ -116,7 +116,7 @@ cd Downloads/Guanaco-main
 - Run the script: Type: 
 
 ```
-python generate_instruction.py
+python -m generate_instruction generate_instruction_following_data
 ```
 
 - Hit Enter. The script will execute and perform the tasks as programmed.
