@@ -1,12 +1,3 @@
-"""
-batch_selfinstruct_generate.py
-
-run:
-python -m generate_instruction generate_instruction_following_data \
-  --output_dir ./ \
-  --num_instructions_to_generate 10 \
-  --model_name="text-davinci-003" \
-"""
 import time
 import json
 import os
@@ -22,7 +13,6 @@ from rouge_score import rouge_scorer
 import utils
 
 import fire
-
 
 def encode_prompt(prompt_instructions):
     """Encode multiple prompt instructions into a single string."""
@@ -109,9 +99,9 @@ def find_word_in_string(w, s):
 
 def generate_instruction_following_data(
     output_dir="./",
-    seed_tasks_path="./seed_tasks.jsonl",
-    num_instructions_to_generate=100,
-    model_name="text-davinci-003",
+    seed_tasks_path="./guanaco_seed_tasks.jsonl",
+    num_instructions_to_generate=1000,
+    model_name="gpt-3.5-turbo-instruct",
     num_prompt_instructions=3,
     request_batch_size=5,
     temperature=1.0,
@@ -129,8 +119,8 @@ def generate_instruction_following_data(
     request_idx = 0
     # load the LM-generated instructions
     machine_instruction_data = []
-    if os.path.exists(os.path.join(output_dir, "regen.json")):
-        machine_instruction_data = utils.jload(os.path.join(output_dir, "regen.json"))
+    if os.path.exists(os.path.join(output_dir, "guanaco_generated_data.json")):
+        machine_instruction_data = utils.jload(os.path.join(output_dir, "guanaco_generated_data.json"))
         print(f"Loaded {len(machine_instruction_data)} machine-generated instructions")
 
     # similarities = {}
@@ -206,7 +196,7 @@ def generate_instruction_following_data(
         process_duration = time.time() - process_start
         print(f"Request {request_idx} took {request_duration:.2f}s, processing took {process_duration:.2f}s")
         print(f"Generated {total} instructions, kept {keep} instructions")
-        utils.jdump(machine_instruction_data, os.path.join(output_dir, "regen.json"))
+        utils.jdump(machine_instruction_data, os.path.join(output_dir, "guanaco_generated_data.json"))
 
 
 def main(task, **kwargs):
