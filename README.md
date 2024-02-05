@@ -1,6 +1,6 @@
 
 <p align="center" width="100%">
-<img src="assets/logo4.png" alt="Guanaco" style="width: 90%; min-width: 300px; display: block; margin: auto;">
+<img src="assets/logo1.png" alt="Guanaco" style="width: 90%; min-width: 300px; display: block; margin: auto;">
 </p>
 
 # Guanaco: Seeding, Tuning, Generating, and the problem of critical intervention in Large Language Models
