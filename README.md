@@ -146,4 +146,4 @@ We'd like to acknowledge the work of:
 
 - the Stanford Alpaca team for their work on the Alpaca model and [code repository](https://github.com/tatsu-lab/stanford_alpaca): Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang and Tatsunori B. Hashimoto.
 
-- the University of Washington Natural Language Processing lab and everyone who worked on the [Self-Instruct paper](https://arxiv.org/abs/2212.10560) and the self-intruct [repository](https://github.com/yizhongw/self-instruct): Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A. Smith, Daniel Khashabi and Hannaneh Hajishirzi.
+- the University of Washington Natural Language Processing lab and everyone who worked on the [Self-Instruct paper](https://arxiv.org/abs/2212.10560) and the self-instruct [repository](https://github.com/yizhongw/self-instruct): Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A. Smith, Daniel Khashabi and Hannaneh Hajishirzi.
