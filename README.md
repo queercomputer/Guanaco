@@ -136,8 +136,8 @@ python -m generate_instruction generate_instruction_following_data
 
 ### Authors
 
-- [Joel Humphries](https://joelhumphries.glitch.me)
-- [Dr Christopher O’Neill](https://www.admscentre.org.au/christopher-oneill/)
+- [Joel Humphries](https://joelhumphries.com.au)
+- [Dr Christopher O’Neill](https://experts.deakin.edu.au/66849-christopher-o'neill)
 
 
 ### Acknowledgements
